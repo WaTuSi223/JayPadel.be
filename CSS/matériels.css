@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 10%;
+}
+.cta{
+    margin-left: auto;
+}
+.p {
+    cursor: pointer;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color:#052796;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(255, 218, 0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.menu-hamburger{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    display: none;
+    width: 35px;
+}
+
+@media screen and (max-width:1350px) {
+    .nav__links{
+        padding: 0;
+    }
+    .menu-hamburger{
+        display: block;
+    }
+    .nav__links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(4px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 1s ease;
+    }
+
+    .nav__links.mobile-menu{
+        margin-left: 0;
+        
+    }
+
+    .nav__links{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .cta{
+        display: block;
+        margin-right: auto;
+    }
+
+    .nav__links li{
+        margin: 25px 0;
+        font-family: none;
+    }
+    li, a{
+        font-size: 26px;
+        color: rgb(4, 4, 120);
+    }
+}
+.facebook{
+    width: 30px;
+}
+.instagram{
+    width: 30px;
+}
+.twitter{
+    width: 30px;
+}
+
+.footer{
+    margin-top: 3%;
+    width: 100%;
+    padding: 100px 325px;
+    background: #333;
+    color: #efefef;
+    display:flex
+}
+
+.footer div{
+    text-align: center;
+}
+.col-2{
+    width: 100%;
+}
+.footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.col-1 a:hover{
+    color: rgb(255, 218, 0);
+}
+form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+
+form button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: rgb(232, 183, 58);
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+.col-3 img{
+    margin: 10px;
+    cursor: pointer;
+}
+.contenu p{
+    flex-grow: 1;
+}
+.raquette{
+    width: 100%;
+}.balle{
+    width: 100%;
+}
+.nav__links .matériels{
+    color: rgb(11, 181, 251);
+}
+.col-1 .matériels{
+    color: rgb(255, 218, 0);
+}
+.nav__links li .matériels:hover {
+    color:rgb(11, 181, 251);
+}
+.contenu{   
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 100px 100px; /*---Espace entre la bordure---*/
+}
+.contenu .line{
+    width: 2px;
+    background-color: black;
+    height: 409px;
+}
+.contenu .col-droite{
+    width: 720px;
+    font-family: "Montserrat", sans-serif;
+}
+.contenu .titre{
+    font-size: 40px;
+    padding-top: 15%;
+}
+.contenu .text{
+    font-size: 20px;
+}
+.contenu-2{   
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 100px 100px; /*---Espace entre la bordure---*/
+}
+.contenu-2 .line{
+    width: 2px;
+    background-color: black;
+    height: 409px;
+}
+.contenu-2 .col-gauche{
+    width: 720px;
+    font-family: "Montserrat", sans-serif;
+    text-align: end
+}
+.contenu-2 .titre{
+    font-size: 40px;
+    padding-top: 15%;
+}
+.contenu-2 .text{
+    font-size: 20px;
+}
